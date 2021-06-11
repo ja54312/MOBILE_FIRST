@@ -106,12 +106,20 @@ main {
     line-height: 1.6rem;
     color: #757575;
 }
+.main-tables-container{
+    display: flex;
+    height: 350px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
 .main-currency-table{
     width: 70%;
+    scroll-snap-align: center;
     min-width: 235px;
     max-width: 500px;
     height: 360px;
-    margin: 0 auto;
+    margin: 0 40px;
     font-family: "Inter",sans-serif;
 }
 .main-currency-table .currency-table--title{
